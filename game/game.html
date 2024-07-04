@@ -1,0 +1,64 @@
+<!--
+    Author: Umberto Laghi
+    E-mail: umberto.laghi@studio.unibo.it
+    Github: @ubolakes
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CG Project ThreeJS - Game</title>
+
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="../style/project_style.css">
+
+        <!-- importing Three.js library-->
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://cdn.jsdelivr.net/npm/three@v0.162.0/build/three.module.js",
+                    "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.162.0/examples/jsm/",
+                    "stats": "https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"
+                }
+            }
+        </script>
+        <!-- resources -->
+        <!-- modules -->
+        <script type="module" src="../resources/utils.js"></script>
+        <script type="module" src="../scene/box.js"></script>
+        <script type="module" src="../scene/scene.js"></script>
+        <script type="module" src="main.js"></script>
+        <!-- javascript files -->        
+        <script type="text/javascript" src="../resources/keyboard_handler.js"></script>
+        <script type="text/javascript" src="../resources/touch_handler.js"></script>
+        <script type="text/javascript" src="../resources/dat.gui.js"></script>
+    </head>
+
+    <body class="body">
+        <div class="column1">
+            <canvas class="canvas" id="canvas" height="1000px" width="1000px"></canvas>
+        </div>
+
+        <div class="column2">
+            <div class="div">
+                Score: <div class="title" style="text-align: center;" id="score"></div>
+            </div>
+
+            <div class="div">
+                <summary class="title">
+                    Keyboard inputs
+                    <p style="text-align: left">
+                        <b>W/S</b>: forward/backward <br>
+                        <b>A/D</b>: left/right <br>
+                        <b>Spacebar</b>: jump <br>
+                    </p>
+                </summary>
+                <div id="gui"></div>
+            </div>
+        </div>
+    </body>
+</html>
