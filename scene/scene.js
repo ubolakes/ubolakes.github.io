@@ -62,7 +62,7 @@ export async function init() {
         //depth: true
     });
     renderer.shadowMap.enabled = true; // enabling shadows using shadow mapping
-    renderer.setPixelRatio( window.devicePixelRatio * 0.7);
+    renderer.setPixelRatio( window.devicePixelRatio * 0.8);
     renderer.setSize(canvas.clientWidth, canvas.clientHeight);
 
     // dat.GUI
