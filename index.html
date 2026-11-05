@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ubolakes's GitHub</title>
+
+    <script src="utils/jsframe.js"></script>
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/window.css">
+
+</head>
+
+<body>
+    <!-- table of contents -->
+    <div class="menu-cascade">
+
+        <ul class="menu">
+            <li class="menu-title">ubolakes's GitHub</li>
+            <li class="menu-item" id="whoami">WhoAmI</li>
+            <li class="menu-item has-submenu" id="projects">Projects</li>
+            <li class="menu-item" id="quit">Quit</li>
+        </ul>
+
+        <ul class="menu submenu" id="projectsmenu">
+            <li class="menu-title">Repositories</li>
+            <li class="menu-item" id="jaderissima">La Jaderissima</li>
+            <li class="menu-item" id="rv_tracer">RISC-V Tracer</li>
+            <li class="menu-item" id="rv_encapsulator">RISC-V Encapsulator</li>
+            <li class="menu-item" id="cva6_te_connector">CVA6 TE Connector</li>
+            <li class="menu-item" id="cg_project">CG Project ThreeJS</li>
+            <li class="menu-item" id="dlx_simulator">DLX Simulator</li>
+        </ul>
+    </div>
+
+    <!-- windows contents -->
+    <template id="whoami_text">
+        <div class="nx-body">
+            <h1>Umberto Laghi</h1>
+            <p>Software developer at AUR°EL S.p.A., with a master's degree in Computer Engineering and a background in
+                RISC-V hardware design.</p>
+            <!-- Qui puoi aggiungere una riga su ruolo, team e da quando lavori in AUR°EL -->
+
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Master's degree in Computer Engineering</strong>, University of Bologna.<br>
+                    Thesis: <em>Efficient Trace for RISC-V: Design, Evaluation, and Integration on a CVA6 multicore
+                        design</em> (December 2024): design and testing of a Trace Encoder compliant with the RISC-V
+                    Efficient Trace specification, and its integration into a RISC-V System-on-Chip emulated on FPGA.
+                </li>
+                <!-- <li><strong>Bachelor's degree in ...</strong>, University of Bologna.</li> -->
+            </ul>
+
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Software developer</strong>, AUR°EL S.p.A.</li>
+                <li>Author of open source hardware modules in the PULP platform ecosystem (ETH Zurich / University of
+                    Bologna): <code>rv_tracer</code> and <code>rv_encapsulator</code>.</li>
+                <!-- Aggiungi qui altri ruoli, stage o esperienze precedenti -->
+            </ul>
+
+            <h2>Knowledge</h2>
+            <ul>
+                <li><strong>Digital hardware design</strong>: SystemVerilog RTL, RISC-V, CVA6 core, trace and debug
+                    (E-Trace, ATB), FPGA emulation</li>
+                <li><strong>Web and graphics</strong>: JavaScript, Three.js, TypeScript and Angular</li>
+                <li><strong>Electronics and embedded</strong>: PCB design with KiCad, QMK firmware on RP2040, CAD and 3D
+                    printing for enclosures</li>
+            </ul>
+
+            <h2>Publications</h2>
+            <ul>
+                <li>Laghi, Manoni, Parisi, Bartolini, <a href="https://arxiv.org/abs/2504.01972" target="_blank"
+                        rel="noopener">Efficient Trace for RISC-V: Design, Evaluation, and Integration in CVA6</a>,
+                    arXiv:2504.01972, 2025.</li>
+            </ul>
+
+            <h2>Find me online</h2>
+            <p class="nx-links">
+                <a href="https://github.com/ubolakes" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                        <path
+                            d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" />
+                    </svg>
+                    GitHub: github.com/ubolakes
+                </a>
+                <br>
+                <a href="https://www.linkedin.com/in/umberto-laghi-a63390266/" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                        <rect width="16" height="16" rx="2" />
+                        <rect x="3" y="6.2" width="2" height="6.3" fill="#fff" />
+                        <circle cx="4" cy="4.1" r="1.2" fill="#fff" />
+                        <path fill="#fff"
+                            d="M6.8 6.2h1.9v.9c.3-.6 1-1.1 2-1.1 1.9 0 2.3 1.2 2.3 2.9v3.6h-2V9.3c0-.8 0-1.6-1-1.6s-1.1.8-1.1 1.6v3.2h-2z" />
+                    </svg>
+                    LinkedIn: umberto-laghi
+                </a>
+            </p>
+
+        </div>
+    </template>
+
+    <template id="jaderissima_text">
+        <div class="nx-body">
+            <h1>La Jaderissima</h1>
+            <p>An open source mechanical keyboard, designed to learn how to design a PCB. The repository holds
+                everything needed to build one at home: KiCad files, CAD models, firmware and a purchase list.</p>
+
+            <img class="nx-img"
+                src="https://raw.githubusercontent.com/ubolakes/La_Jaderissima_mkb/main/source/images/la-jaderissima-prototype.jpg"
+                alt="The first prototype of La Jaderissima">
+            <p class="nx-caption">The first prototype of La Jaderissima</p>
+
+            <h2>Design choices</h2>
+            <ul>
+                <li><b>Layout:</b> 96% ANSI, to keep all the keys with a smaller footprint than a 100% board.</li>
+                <li><b>Thin case:</b> a bent sheet-metal backplate (1.5 mm stainless steel) plus a 3D-printable
+                    bottom case, with printable feet to tilt the board. The case was designed in CAD by a friend and
+                    colleague, Biagio M.</li>
+                <li><b>Switches:</b> Outemu GTMX medium-profile, lower than Cherry MX but MX-compatible, so PCBs,
+                    keycaps and stabilizers stay cheap. The Kailh Choc was dropped because parts were hard to find.
+                </li>
+                <li><b>MCU:</b> Raspberry Pi Pico (RP2040) or any clone with the same pinout.</li>
+                <li><b>Firmware:</b> QMK, either precompiled in the <code>firmware</code> folder or built from the
+                    QMK fork.</li>
+            </ul>
+
+            <img class="nx-img"
+                src="https://raw.githubusercontent.com/ubolakes/La_Jaderissima_mkb/main/source/images/pcb-front.png"
+                alt="Front side of the keyboard PCB">
+            <p class="nx-caption">Front side of the PCB</p>
+
+            <img class="nx-img"
+                src="https://raw.githubusercontent.com/ubolakes/La_Jaderissima_mkb/main/source/images/keyboard-case.png"
+                alt="Mechanical keyboard bottom case">
+            <p class="nx-caption">The 3D-printable bottom case</p>
+
+            <h2>Build it yourself</h2>
+            <p>The README lists the parts (hotswap sockets, 1N4148 diodes, switches, stabilizers, Pico, low-profile
+                keycaps), the files for the PCB, the case (STEP, split in two parts for small printers) and the
+                backplate (DXF for laser cutting, plus a bending drawing).</p>
+
+            <p><a href="https://github.com/ubolakes/La_Jaderissima_mkb" target="_blank" rel="noopener">View on
+                    GitHub</a></p>
+        </div>
+    </template>
+
+    <template id="rv_tracer_text">
+        <div class="nx-body">
+            <h1>rv_tracer</h1>
+            <p>An RTL implementation of the RISC-V <i>E-trace</i> (Efficient Trace) specification: a trace encoder that
+                compresses the branch trace of a processor. Developed as part of the PULP project (ETH Zurich and
+                University of Bologna).</p>
+
+            <img class="nx-img"
+                src="https://raw.githubusercontent.com/pulp-platform/rv_tracer/main/img/high_level_te_arch.jpg"
+                alt="High level rv_tracer architecture">
+            <p class="nx-caption">High level architecture (image from the rv_tracer repository, CC BY-ND 4.0)</p>
+
+            <h2>Modules</h2>
+            <ul>
+                <li><b>te_reg:</b> stores the configuration (accessed through an APB interface) and produces the clock
+                    for the other modules</li>
+                <li><b>te_resync_counter:</b> counts packets or cycles and requests a resynchronization packet</li>
+                <li><b>te_branch_map:</b> counts branches and records whether they were taken</li>
+                <li><b>te_filter:</b> selects which parts of the code are traced</li>
+                <li><b>te_priority:</b> decides which packet to emit and applies a simple address compression</li>
+                <li><b>te_packet_emitter:</b> builds the packet payload</li>
+            </ul>
+
+            <h2>Status</h2>
+            <p>Supported: delta and full address modes, single and multiple retirement, trigger unit. Not implemented
+                yet: implicit exception, sequentially inferable jump, implicit return, branch prediction and jump target
+                cache modes, data trace, time and context packets. All modules have been tested.</p>
+
+            <p><a href="https://github.com/pulp-platform/rv_tracer" target="_blank" rel="noopener">View on GitHub</a>
+            </p>
+        </div>
+    </template>
+
+    <template id="rv_encapsulator_text">
+        <div class="nx-body">
+            <h1>rv_encapsulator</h1>
+            <p>A SystemVerilog implementation of the <i>Unformatted Trace &amp; Diagnostic Data Packet Encapsulation for
+                    RISC-V</i> specification. It takes the packets produced by the trace encoder and turns them into
+                standard packets that can be sent off-chip. Part of the PULP project.</p>
+
+            <img class="nx-img"
+                src="https://raw.githubusercontent.com/pulp-platform/rv_encapsulator/main/docs/img/rv_encapsulator.jpg"
+                alt="rv_encapsulator top level architecture">
+            <p class="nx-caption">Top-level architecture (image from the rv_encapsulator repository, CC BY-ND 4.0)</p>
+
+            <h2>Why it exists</h2>
+            <p>The trace encoder's output cannot be read outside simulation. The encapsulator wraps it with a header and
+                optional fields, and sends it over the <i>ARM Trace Bus</i> (ATB), a protocol built for trace data that
+                can be converted to AXI and then PCIe. The architecture is meant to be easy to adapt to other output
+                protocols.</p>
+
+            <h2>Modules</h2>
+            <ul>
+                <li><b>encapsulator:</b> builds the encapsulation structure (header, optional source ID and timestamp,
+                    payload)</li>
+                <li><b>slicer:</b> splits the encapsulated packet into slices that fit the width of the ATB data bus
+                </li>
+                <li><b>atb_transmitter:</b> drives the ATB interface, with data transfer and flush control
+                    (synchronization and wake-up are not supported)</li>
+            </ul>
+
+            <p><a href="https://github.com/pulp-platform/rv_encapsulator" target="_blank" rel="noopener">View on
+                    GitHub</a></p>
+
+        </div>
+    </template>
+
+    <template id="cva6_te_connector_text">
+        <div class="nx-body">
+            <h1>CVA6 Trace Encoder Connector</h1>
+            <p>A hardware module that connects a CVA6 core to a trace encoder compliant with the E-trace specification.
+            </p>
+
+            <img class="nx-img"
+                src="https://raw.githubusercontent.com/ubolakes/cva6_te_connector/main/doc/img/arch_with_connector.jpg"
+                alt="System architecture including cva6_te_connector">
+            <p class="nx-caption">Whole system architecture including the connector</p>
+
+            <h2>The problem</h2>
+            <p>The trace encoder needs inputs (<code>itype</code>, <code>cause</code>, <code>tval</code>,
+                <code>priv</code>, <code>iaddr</code>, <code>iretire</code>, <code>ilastsize</code>) that no RISC-V CPU
+                produces directly, and the specification leaves the interface module to the designer. This module
+                computes them from what the CVA6 commit stage outputs. It handles N commit ports (2 by default in CVA6)
+                and can be adapted to other cores, such as Snitch.
+            </p>
+
+            <h2>How it works</h2>
+            <ul>
+                <li><b>itype_detector:</b> works out the instruction type from the committed operation and from
+                    exceptions or interrupts in the same cycle</li>
+                <li><b>Serialization:</b> one FIFO per commit port acts as an elastic buffer, and a counter-driven
+                    multiplexer feeds instructions one at a time to the FSM</li>
+                <li><b>FSM:</b> two states (<i>idle</i> and <i>count</i>) that compute the block fields</li>
+                <li><b>Deserialization:</b> a demultiplexer collects up to N blocks and raises <code>valid</code> when
+                    they are all ready</li>
+            </ul>
+
+            <img class="nx-img"
+                src="https://raw.githubusercontent.com/ubolakes/cva6_te_connector/main/doc/img/cva6_te_connector.jpg"
+                alt="cva6_te_connector internal architecture">
+            <p class="nx-caption">Internal architecture</p>
+
+            <p><a href="https://github.com/ubolakes/cva6_te_connector" target="_blank" rel="noopener">View on GitHub</a>
+            </p>
+
+        </div>
+    </template>
+
+    <template id="cg_project_text">
+        <div class="nx-body">
+            <h1>CGProjectThreeJS</h1>
+            <p>Final project for the <i>Fondamenti di Computer Graphics M - modulo 2</i> course: an interactive 3D scene
+                built with Three.js. License: GPL-3.0.</p>
+
+            <h2>Requirements met</h2>
+            <ul>
+                <li>3D geometry shown in perspective projection</li>
+                <li>Keyboard and mouse interaction (optionally gamepad)</li>
+                <li>At least one light, with gradient shading</li>
+                <li>Texture mapping on at least two objects, one of them a photo of the author</li>
+                <li>On-screen control panel with text and 2D graphics</li>
+                <li>Usable from mobile devices (touch events)</li>
+                <li>Advanced rendering techniques that can be toggled from the menu (shadows, transparencies,
+                    reflections, bump-mapping...)</li>
+            </ul>
+
+            <p><a href="https://github.com/ubolakes/CGProjectThreeJS" target="_blank" rel="noopener">View on GitHub</a>
+            </p>
+
+        </div>
+    </template>
+
+    <template id="dlx_simulator_text">
+        <div class="nx-body">
+            <h1>DLX-RISCV-simulator</h1>
+            <p>My fork of <a href="https://github.com/FilippoComastri/DLX-RISCV-simulator" target="_blank"
+                    rel="noopener">FilippoComastri/DLX-RISCV-simulator</a>, a simulator for the DLX and RISC-V
+                instruction sets.</p>
+
+            <h2>Tech</h2>
+            <p>It is an Angular application (generated with Angular CLI 8.3.19) with a Dockerfile, unit tests (Karma)
+                and end-to-end tests. The repository also contains an HTML page with the DLX instructions.</p>
+
+            <p><a href="https://github.com/ubolakes/DLX-RISCV-simulator" target="_blank" rel="noopener">View on
+                    GitHub</a></p>
+
+        </div>
+    </template>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

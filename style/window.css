@@ -1,0 +1,207 @@
+:root {
+    --desktop: #555555;
+    --face: #aaaaaa;
+    --light: #ffffff;
+    --shadow: #555555;
+    --black: #000000;
+}
+
+span[id^="htmlElement_window_"]:not([id*="_canvas"]) {
+    border: 1px solid var(--black) !important;
+    border-radius: 0 !important;
+    box-shadow: 2px 2px 0 var(--black) !important;
+    background: var(--light) !important;
+    font-family: Helvetica, Arial, "Liberation Sans", sans-serif !important;
+}
+
+.jsframe-titlebar-focused,
+.jsframe-titlebar-unfocused {
+    background: var(--black) !important;
+    color: var(--light) !important;
+    border: 0 !important;
+    border-bottom: 1px solid var(--black) !important;
+    border-radius: 0 !important;
+    text-shadow: none !important;
+    font-family: Helvetica, Arial, "Liberation Sans", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+
+/* inactive window */
+.jsframe-titlebar-unfocused {
+    background: var(--face) !important;
+    color: var(--black) !important;
+}
+
+/* centered title */
+[id$="_titleBarText"] {
+    left: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+/* decorative button on the left */
+.jsframe-titlebar-focused::before,
+.jsframe-titlebar-unfocused::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    background: var(--face);
+    border-top: 1px solid var(--light);
+    border-left: 1px solid var(--light);
+    border-right: 1px solid var(--shadow);
+    border-bottom: 1px solid var(--shadow);
+    /* piccolo rettangolo interno come nell'originale */
+    background-image: linear-gradient(var(--black), var(--black));
+    background-size: 8px 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+[component-id="closeButton"] {
+    box-sizing: border-box !important;
+    top: -20px !important;
+    left: auto !important;
+    right: 4px !important;
+    width: 16px !important;
+    height: 16px !important;
+    background: var(--face) !important;
+    color: var(--black) !important;
+    border-radius: 0 !important;
+    border-top: 1px solid var(--light) !important;
+    border-left: 1px solid var(--light) !important;
+    border-right: 1px solid var(--shadow) !important;
+    border-bottom: 1px solid var(--shadow) !important;
+    font-size: 11px !important;
+    line-height: 14px !important;
+}
+
+[component-id="closeButton"]>span {
+    font-size: 11px !important;
+    line-height: 14px !important;
+}
+
+[component-id="closeButton"]:active {
+    border-top-color: var(--shadow) !important;
+    border-left-color: var(--shadow) !important;
+    border-right-color: var(--light) !important;
+    border-bottom-color: var(--light) !important;
+}
+
+[id$="_canvas"] {
+    border-radius: 0 !important;
+}
+
+[id$="_canvas"]>div:not([component-id]) {
+    border-radius: 0 !important;
+    background: var(--light) !important;
+}
+
+[id$="_canvas"]::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 11px;
+    z-index: 60;
+    pointer-events: none;
+    background-color: var(--face);
+    border-top: 1px solid var(--black);
+    background-image:
+        linear-gradient(var(--black), var(--black)),
+        linear-gradient(var(--black), var(--black));
+    background-size: 1px 100%, 1px 100%;
+    background-position: 52px 0, calc(100% - 52px) 0;
+    background-repeat: no-repeat;
+}
+
+.nx-body {
+    box-sizing: border-box;
+    padding: 4px 5px 16px;
+    color: var(--black);
+    font-family: Helvetica, Arial, "Liberation Sans", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.nx-body h1,
+.nx-body h2 {
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.15;
+}
+
+.nx-body h1 {
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.nx-body h2 {
+    font-size: 19px;
+    margin: 4px 0 2px;
+}
+
+.nx-body p {
+    margin: 0;
+}
+
+.nx-body a {
+    color: var(--black);
+    text-decoration: underline;
+    cursor: default;
+}
+
+.nx-body a:hover {
+    background: var(--face);
+}
+
+.nx-body img.nx-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 6px 0 0;
+  border: 1px solid var(--black);
+}
+ 
+.nx-body .nx-caption {
+  margin: 2px 0 8px;
+  font-size: 11px;
+  line-height: 14px;
+}
+ 
+.nx-body ul,
+.nx-body ol {
+  margin: 2px 0 6px;
+  padding-left: 20px;
+}
+ 
+.nx-body li { line-height: 18px; }
+ 
+.nx-body code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+  background: var(--face);
+  padding: 0 2px;
+}
+ 
+[id$="_canvas"] > div:not([component-id]) {
+  overflow: auto !important;
+}
+
+.nx-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+ 
+.nx-links svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--black);
+  flex: none;
+}
