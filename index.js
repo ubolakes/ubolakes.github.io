@@ -188,7 +188,7 @@ function showCGProjectWindow() {
         const frame = jsFrame.create({
             name: 'CGProjectWindow',
             title: 'CG Project ThreeJS',
-            left: 20 + getRandomInt(), top: 150 + getRandomInt(), width: 500, height: 400,
+            left: 20 + getRandomInt(), top: 150 + getRandomInt(), width: 400, height: 300,
             movable: true,// Enable to be moved  by mouse
             resizable: false,// Enable to be resized by mouse
             html: getContent('cg_project_text')
@@ -220,5 +220,3 @@ function showSimulatorWindow() {
         frame.show();
     }
 }
-
-
